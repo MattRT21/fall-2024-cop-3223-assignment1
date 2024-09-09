@@ -9,12 +9,16 @@
 // Input: 
 // Output:  
 //*************************************************************************
+
+
 #include <stdio.h>
 #include <math.h>
 #define PI 3.14159
 
 //*********************************************
-// function definitions 
+// double askForUserInput()
+// Purpose: Take user input
+//*********************************************
 
 double askForUserInput() 
 {
@@ -22,6 +26,13 @@ double askForUserInput()
     scanf("%lf", &Value);
     return Value;
 }
+
+
+//*********************************************
+// double getPointX1()
+// Purpose: Establish x1
+//*********************************************
+
 double getPointX1()
 {
     double x1;
@@ -29,6 +40,13 @@ double getPointX1()
     x1 = askForUserInput();
     return x1;
 }
+
+
+//*********************************************
+// double getPointX2()
+// Purpose: Establish x2
+//*********************************************
+
 double getPointX2()
 {
     double x2;
@@ -36,6 +54,13 @@ double getPointX2()
     x2 = askForUserInput();
     return x2;
 }
+
+
+//*********************************************
+// double getPointY1()
+// Purpose: Establish y1
+//*********************************************
+
 double getPointY1()
 {
     double y1;
@@ -43,6 +68,13 @@ double getPointY1()
     y1 = askForUserInput();
     return y1;
 }
+
+
+//*********************************************
+// double getPointY2()
+// Purpose: Establish y2
+//*********************************************
+
 double getPointY2()
 {
     double y2;
@@ -50,6 +82,13 @@ double getPointY2()
     y2 = askForUserInput();
     return y2;
 }
+
+
+//*********************************************
+// double calculateDistance()
+// Purpose: calculate distance, return double to main
+//*********************************************
+
 double calculateDistance() 
 {
     double x1 = 0, x2 = 0, y1 = 0, y2 = 0;
@@ -68,6 +107,12 @@ double calculateDistance()
     return distance;
 }
 
+
+//*********************************************
+// double calculateDistanceNoPrint()
+// Purpose: calculate distance without conclusion print statement, for use in other functions
+//*********************************************
+
 double calculateDistanceNoPrint() 
 {
     double x1 = 0, x2 = 0, y1 = 0, y2 = 0;
@@ -84,6 +129,13 @@ double calculateDistanceNoPrint()
       
     return distance;
 }
+
+
+//*********************************************
+// double calculatePerimeter() 
+// Purpose: calculate perimeter
+//*********************************************
+
 double calculatePerimeter() 
 {
     double distance = 0, perimeter = 0;
@@ -94,6 +146,13 @@ double calculatePerimeter()
     
     return 5.0;
 }
+
+
+//*********************************************
+// double calculateArea()
+// Purpose: calculate area
+//*********************************************
+
 double calculateArea() 
 {
     double distance = 0, area = 0, radius = 0;
@@ -105,6 +164,13 @@ double calculateArea()
     
     return 3.0;
 }
+
+
+//*********************************************
+// double calculateWidth()
+// Purpose: calculate width by recalling distance
+//*********************************************
+
 double calculateWidth() 
 {
     double distance = 0, width =0;
@@ -115,6 +181,13 @@ double calculateWidth()
     
     return 2.0;
 }
+
+
+//*********************************************
+// double calculateHeight()
+// Purpose: calculate height by recalling distance
+//*********************************************
+
 double calculateHeight() 
 {
     double distance = 0, height =0;
@@ -125,10 +198,11 @@ double calculateHeight()
     
     return 1.0;
 }
+
+
 //*********************************************
 // int main(int argc, char **argv)
 // Purpose: Call all other functions
-// All other functions' outputs
 //*********************************************
 
 int main(int argc, char **argv) 
